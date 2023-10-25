@@ -142,10 +142,8 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.volume.metadata.method=dm-default-key
 
 # Display
-vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_offline_rotator=1
 vendor.display.disable_system_load_check=1
-vendor.display.enable_async_powermode=0
 vendor.display.enable_camera_smooth=1
 vendor.display.not_switch_qhd_120hz=1
 vendor.display.primary_mixer_stages=9
@@ -175,9 +173,7 @@ vendor.gatekeeper.disable_spu=true
 debug.sf.disable_backpressure=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
-debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
 debug.sf.latch_unsignaled=1
 persist.sys.sf.color_saturation=1.0
 ro.hardware.egl=adreno
@@ -198,7 +194,6 @@ vendor.opengles.version=196610
 ro.incremental.enable=yes
 
 # Media
-debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 
 # Netflix
@@ -227,7 +222,6 @@ persist.vendor.sensors.sync_request=true
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.product_string=realme GT NEO 3T
-vendor.usb.qdss.inst.name=qdss
 vendor.usb.rmnet.func.name=gsi
 vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
