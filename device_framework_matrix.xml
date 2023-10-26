@@ -413,4 +413,56 @@
             <instance>cameraextensionservice</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.touch</name>
+        <version>1.0</version>
+        <interface>
+            <name>IGloveMode</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IHighTouchPollingRate</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IKeyDisabler</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IKeySwapper</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ITouchscreenGesture</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IStylusMode</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.trust</name>
+        <version>1.0</version>
+        <interface>
+            <name>IUsbRestrict</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.aospa.power</name>
+        <version>1</version>
+        <interface>
+            <name>IPowerFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.vpp</name>
+        <version>1.4</version>
+        <interface>
+            <name>IHidlVppService</name>
+            <instance>vppService</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
