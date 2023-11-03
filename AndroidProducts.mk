@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_spartan.mk
+    $(LOCAL_DIR)/rising_spartan.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_spartan-user \
-    octavi_spartan-userdebug \
-    octavi_spartan-eng
+    rising_spartan-user \
+    rising_spartan-userdebug \
+    rising_spartan-eng

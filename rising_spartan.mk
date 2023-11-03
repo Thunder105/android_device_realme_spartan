@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spartan/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+$(call inherit-product, vendor/rising/config/common_full_phone.mk)
 
-PRODUCT_NAME := octavi_spartan
+PRODUCT_NAME := rising_spartan
 PRODUCT_DEVICE := spartan
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -23,15 +23,16 @@ PRODUCT_MODEL := RMX3371
 PRODUCT_SYSTEM_NAME := RMX3371
 PRODUCT_SYSTEM_DEVICE := RE54E4L1
 
-#OS Stuff
+# Device config
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_BLUR := true
-TARGET_WANTS_FOD_ANIMATIONS := true
-TARGET_SUPPORTS_QUICK_TAP  := true
-OCTAVI_MAINTAINER := Amrutesh
+WITH_GMS := true
+RISING_MAINTAINER := Amrutesh
+RISING_CHIPSET := Snapdragon®870
 
-#Gapps
-WITH_GAPPS := true
+
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
