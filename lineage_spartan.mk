@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spartan/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/rising/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := rising_spartan
+PRODUCT_NAME := lineage_spartan
 PRODUCT_DEVICE := spartan
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -24,13 +24,21 @@ PRODUCT_SYSTEM_NAME := RMX3371
 PRODUCT_SYSTEM_DEVICE := RE54E4L1
 
 # Device config
-TARGET_HAS_UDFPS := true
+TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GMS := true
-RISING_MAINTAINER := Amrutesh
-RISING_CHIPSET := Snapdragon®870
+
+# GAPPS
+WITH_GAPPS := true
+
+# Maintainer Flags
+ALPHA_MAINTAINER := Amrutesh
+ALPHA_BUILD_TYPE := Official
+
+# Debugging Flags
+TARGET_INCLUDE_MATLOG := false
+TARGET_DEFAULT_ADB_ENABLED := false
 
 
 
